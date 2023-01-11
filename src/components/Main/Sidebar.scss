@@ -1,0 +1,54 @@
+.sidebar-body {
+	.connect-btn {
+		display: flex;
+		align-items: center;
+		height: fit-content;
+		padding: 2rem;
+		margin: 2rem auto;
+		border-radius: 1rem;
+		color: aliceblue;
+		font-weight: 600;
+		text-align: center;
+		background-color: #008f7d;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+
+	.side-head {
+		display: flex;
+		align-items: center;
+		font-size: 1.8rem;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		font-weight: 500;
+		cursor: pointer;
+	}
+}
+
+//SideList CSS
+
+.list {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 3rem;
+
+	.list-head {
+		color: #000;
+		opacity: 0.5;
+		margin-bottom: 1rem;
+	}
+	.list-body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+	.list-item {
+		display: flex;
+
+		cursor: pointer;
+
+		.list-icon {
+			margin: 3px 0;
+		}
+	}
+}

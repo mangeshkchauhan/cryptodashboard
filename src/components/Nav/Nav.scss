@@ -1,0 +1,189 @@
+.navbar-container {
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	background: rgba(250, 250, 250, 0.3);
+	backdrop-filter: blur(7.3932px);
+	-webkit-backdrop-filter: blur(7.932px);
+	border-radius: 23.6582px;
+	z-index: 2000;
+
+	.logo {
+		display: flex;
+		margin: 0 1.5rem;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 7rem;
+			border-radius: 3.5rem;
+		}
+	}
+
+	.title {
+		font-size: 3.2rem;
+		font-weight: 900;
+		flex: 1;
+		padding-left: 1.5rem;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+	}
+
+	.navigator {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 3rem;
+
+		.cross {
+			display: none;
+		}
+	}
+
+	.navigate-btn {
+		text-decoration: none;
+		padding-left: 1rem;
+		font-weight: 600;
+		font-size: 4rem;
+		color: #989898;
+		font-family: 'Alegreya', 'Fredoka One', sans-serif;
+		cursor: pointer;
+		&:not(&:last-child) {
+			padding-right: 1rem;
+		}
+	}
+
+	.active {
+		color: #282828;
+		scale: 1.09;
+	}
+	.navBtn {
+		border: none;
+		background-color: transparent;
+		font-size: 3rem;
+		z-index: 150;
+		width: 5rem;
+		display: none;
+		top: 3rem;
+		right: 3rem;
+		cursor: pointer;
+
+		&:hover {
+			color: yellowgreen;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.navigator {
+			display: none;
+		}
+		.school-title {
+			flex: 10;
+			font-size: 2rem;
+		}
+		.navBtn {
+			margin-right: 2rem;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.title {
+		display: none;
+	}
+}
+.navPhone {
+	transform: translateX(-200%);
+	transition: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	z-index: 20001;
+
+	.navigator-phone {
+		position: absolute;
+		background-color: aliceblue;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 20rem;
+		display: flex;
+		padding: 2rem;
+		flex-direction: column;
+
+		.cross {
+			display: block;
+			color: #989898;
+			margin: 2rem 2rem 2rem auto;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+	}
+
+	.navigate-btn {
+		text-decoration: none;
+		padding: 1rem;
+		font-weight: 600;
+		font-size: 4rem;
+		color: #989898;
+		font-family: 'Alegreya', 'Fredoka One', sans-serif;
+		text-align: center;
+
+		&:first-child {
+			margin-top: 4rem;
+		}
+	}
+}
+
+.navPhoneComes {
+	transform: translateX(0);
+}
+
+// Search Bar
+
+.search {
+	max-width: 80rem;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+}
+.helper-search {
+	flex: 3;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 3px solid #008f7d;
+	font-size: 2rem;
+	padding: 15px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9dbfaf;
+}
+
+.searchTerm:focus {
+	color: #008f7d;
+}
+
+.searchButton {
+	width: 40px;
+	border: 1px solid #008f7d;
+	background: #008f7d;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
