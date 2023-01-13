@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *{
   margin: 0;
   padding: 0;
@@ -20,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: fixed;
   background-image: linear-gradient(to bottom right, #E6F3ED, #E9DCD5,#DFE6E8 );
+ 
   
 }
 
