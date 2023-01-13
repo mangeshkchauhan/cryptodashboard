@@ -19,9 +19,15 @@ const Nav = ({ setMenuOpen, menuOpen }) => {
 			</div>
 			<div className='helper-search'>
 				<div className='search'>
-					<input type='text' className='searchTerm' placeholder='Search?' onChange={(e) => setText(e.target.value)} value={text}/>
+					<input
+						type='text'
+						className='searchTerm'
+						placeholder='Search?'
+						onChange={(e) => setText(e.target.value)}
+						value={text}
+					/>
 					<button type='submit' className='searchButton'>
-						<AiOutlineSearch />
+						<AiOutlineSearch className='mx-auto' />
 					</button>
 				</div>
 			</div>
