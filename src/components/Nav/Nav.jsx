@@ -54,11 +54,16 @@ const NavContent = ({ setMenuOpen }) => {
 				<div className='cross' onClick={() => setMenuOpen(false)}>
 					<AiOutlineClose />
 				</div>
-				<div className='navigate-btn'>
+				<div className='navigate-btn relative'>
 					<BiMailSend />
 				</div>
 				<div className='navigate-btn'>
-					<BiBell />
+					<div className='relative'>
+						<BiBell />
+						<div className='notification h-6 w-6 rounded-full bg-red-400 absolute -top-1 right-0 text-white text-sm text-center font-bold align-middle'>
+							2
+						</div>
+					</div>
 				</div>
 				<div className='navigate-btn'>
 					<CgProfile />
